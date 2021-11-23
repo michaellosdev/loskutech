@@ -1,5 +1,6 @@
-@import url(_global-styles);
-@import url(_variables);
+@import url(variables.scss);
+@import url(global-styles.scss);
+@import url(animations.css);
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
