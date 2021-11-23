@@ -1,0 +1,97 @@
+
+
+// contact button animations
+
+@keyframes contact-button-hover-in {
+    0% {
+        background-color: $red;
+    }
+
+    10% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 0%, rgba(229,60,93,1) 20%);
+    }
+
+    20% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 0%, rgba(229,60,93,1) 40%);
+    }
+
+    30% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 0%, rgba(229,60,93,1) 60%);
+    }
+
+    40% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 0%, rgba(229,60,93,1) 80%);
+    }
+
+    50% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 0%, rgba(229,60,93,1) 100%);
+    }
+
+    60% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 20%, rgba(229,60,93,1) 100%);
+    }
+
+    70% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 40%, rgba(229,60,93,1) 100%);
+    }
+
+    80% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 60%, rgba(229,60,93,1) 100%);
+    }
+
+    90% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 80%, rgba(229,60,93,1) 100%);
+    }
+    
+    100% {
+        background: radial-gradient(circle, rgba(34,63,227,1) 100%, rgba(229,60,93,1) 100%);
+    }
+    
+}
+
+@keyframes contact-button-hover-out {
+    0% {
+        background-color: $blue;
+    }
+
+    10% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 0% ,rgba(34,63,227,1) 20%);
+    }
+
+    20% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 0% ,rgba(34,63,227,1) 40%);
+    }
+
+    30% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 0% ,rgba(34,63,227,1) 60%);
+    }
+
+    40% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 0% ,rgba(34,63,227,1) 80%);
+    }
+
+    50% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 0% ,rgba(34,63,227,1) 100%);
+    }
+
+    60% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 20% ,rgba(34,63,227,1) 100%);
+    }
+
+    70% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 40% ,rgba(34,63,227,1) 100%);
+    }
+
+    80% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 60% ,rgba(34,63,227,1) 100%);
+    }
+
+    90% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 80% ,rgba(34,63,227,1) 100%);
+    }
+    
+    100% {
+        background: radial-gradient(circle, rgba(229,60,93,1) 100% ,rgba(34,63,227,1) 100%);
+    }
+    
+}

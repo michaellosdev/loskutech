@@ -1,9 +1,220 @@
-@import url(variables.scss);
-@import url(global-styles.scss);
-@import url(animations.css);
+@-webkit-keyframes contact-button-hover-in {
+  0% {
+    background-color: #E53C5D;
+  }
+  10% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 20%);
+  }
+  20% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 40%);
+  }
+  30% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 60%);
+  }
+  40% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 80%);
+  }
+  50% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 100%);
+  }
+  60% {
+    background: radial-gradient(circle, #223fe3 20%, #e53c5d 100%);
+  }
+  70% {
+    background: radial-gradient(circle, #223fe3 40%, #e53c5d 100%);
+  }
+  80% {
+    background: radial-gradient(circle, #223fe3 60%, #e53c5d 100%);
+  }
+  90% {
+    background: radial-gradient(circle, #223fe3 80%, #e53c5d 100%);
+  }
+  100% {
+    background: radial-gradient(circle, #223fe3 100%, #e53c5d 100%);
+  }
+}
+
+@keyframes contact-button-hover-in {
+  0% {
+    background-color: #E53C5D;
+  }
+  10% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 20%);
+  }
+  20% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 40%);
+  }
+  30% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 60%);
+  }
+  40% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 80%);
+  }
+  50% {
+    background: radial-gradient(circle, #223fe3 0%, #e53c5d 100%);
+  }
+  60% {
+    background: radial-gradient(circle, #223fe3 20%, #e53c5d 100%);
+  }
+  70% {
+    background: radial-gradient(circle, #223fe3 40%, #e53c5d 100%);
+  }
+  80% {
+    background: radial-gradient(circle, #223fe3 60%, #e53c5d 100%);
+  }
+  90% {
+    background: radial-gradient(circle, #223fe3 80%, #e53c5d 100%);
+  }
+  100% {
+    background: radial-gradient(circle, #223fe3 100%, #e53c5d 100%);
+  }
+}
+
+@-webkit-keyframes contact-button-hover-out {
+  0% {
+    background-color: #223FE3;
+  }
+  10% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 20%);
+  }
+  20% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 40%);
+  }
+  30% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 60%);
+  }
+  40% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 80%);
+  }
+  50% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 100%);
+  }
+  60% {
+    background: radial-gradient(circle, #e53c5d 20%, #223fe3 100%);
+  }
+  70% {
+    background: radial-gradient(circle, #e53c5d 40%, #223fe3 100%);
+  }
+  80% {
+    background: radial-gradient(circle, #e53c5d 60%, #223fe3 100%);
+  }
+  90% {
+    background: radial-gradient(circle, #e53c5d 80%, #223fe3 100%);
+  }
+  100% {
+    background: radial-gradient(circle, #e53c5d 100%, #223fe3 100%);
+  }
+}
+
+@keyframes contact-button-hover-out {
+  0% {
+    background-color: #223FE3;
+  }
+  10% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 20%);
+  }
+  20% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 40%);
+  }
+  30% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 60%);
+  }
+  40% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 80%);
+  }
+  50% {
+    background: radial-gradient(circle, #e53c5d 0%, #223fe3 100%);
+  }
+  60% {
+    background: radial-gradient(circle, #e53c5d 20%, #223fe3 100%);
+  }
+  70% {
+    background: radial-gradient(circle, #e53c5d 40%, #223fe3 100%);
+  }
+  80% {
+    background: radial-gradient(circle, #e53c5d 60%, #223fe3 100%);
+  }
+  90% {
+    background: radial-gradient(circle, #e53c5d 80%, #223fe3 100%);
+  }
+  100% {
+    background: radial-gradient(circle, #e53c5d 100%, #223fe3 100%);
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#top-container {
+  position: relative;
+  height: 100vh;
+}
+
+#background-img {
+  width: 1500px;
+  height: 992px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#header {
+  height: 100px;
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+#logo-img {
+  height: 90px;
+  width: 61px;
+  margin-right: 139px;
+}
+
+#nav li {
+  display: inline;
+  text-align: center;
+  padding: 0 25px 0 25px;
+}
+
+#contact-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #E53C5D;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  -webkit-animation: contact-button-hover-out 0.2s 1 none;
+          animation: contact-button-hover-out 0.2s 1 none;
+}
+
+#contact-btn:hover {
+  -webkit-animation: contact-button-hover-in 0.2s 1 none;
+          animation: contact-button-hover-in 0.2s 1 none;
+  background-color: #223FE3;
 }
 /*# sourceMappingURL=index.css.map */

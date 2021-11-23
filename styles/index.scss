@@ -1,15 +1,69 @@
-@import url(variables.scss);
-@import url(global-styles.scss);
-@import url(animations.css);
+@import '_variables';
+@import '_animations';
+@import '_global-styles';
 
 
-* {
-    margin: 0; 
-    box-sizing: border-box;
+#top-container {
+    position: relative;
+    height: 100vh;
+}
+
+#background-img {
+    width: 1500px;
+    height: 992px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+}
+
+#header {
+    height: 100px;
+    width: 80%;
+    font-family: $open-sans;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#logo-img {
+    height: 90px;
+    width: 61px;
+    margin-right: 139px;
+  
     
 }
 
-body {
-background-color: $red;
+#nav li{
+    display: inline;
+    text-align: center;
+    padding: 0 25px 0 25px;
 }
 
+#nav {
+   
+    
+    
+    
+}
+
+#contact-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border:none;
+    background-color: $red;
+    color: $white;
+    text-transform: uppercase;
+    animation: contact-button-hover-out 0.2s 1 none;
+    
+}
+
+#contact-btn:hover {
+    animation: contact-button-hover-in 0.2s 1 none;
+    background-color: $blue;
+}
