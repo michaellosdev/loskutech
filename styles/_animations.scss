@@ -9,6 +9,7 @@
 
     10% {
         background: radial-gradient(circle, rgba(34,63,227,1) 0%, rgba(229,60,93,1) 20%);
+        
     }
 
     20% {
@@ -92,6 +93,102 @@
     
     100% {
         background: radial-gradient(circle, rgba(229,60,93,1) 100% ,rgba(34,63,227,1) 100%);
+    }
+    
+}
+
+
+// nav menu animation
+
+@keyframes nav-menu-in {
+    from {
+        color: #000000;
+        font-size: 1rem;
+       
+    }
+
+    to {
+        color: $red;
+        font-size: 1.1rem;
+        
+    }
+}
+
+@keyframes nav-menu-out {
+    from {
+
+        color: $red;
+        font-size: 1.1rem;
+      
+    }
+
+    to {
+        color: #000000;
+        font-size: 1rem;
+        
+        
+    }
+}
+
+// step card animation 
+
+
+@keyframes step-card-in {
+    from { 
+        height: 600px;
+        width: 20%;
+    }
+
+    to {
+        height: 650px;
+        width: 21%;
+    }
+}
+
+@keyframes step-card-out {
+    from { 
+        height: 650px;
+        width: 21%;
+       
+    }
+
+    to {
+        height: 600px;
+        width: 20%;
+    }
+}
+
+
+
+
+//steps icons animimations
+
+@keyframes icons-animation-in {
+    
+    from {
+        transform: rotate(0deg);
+        padding-bottom: 0;
+    }
+
+    to {
+        transform: rotate(5deg);
+        margin-top: -70px;
+    }
+    
+}
+
+@keyframes icons-animation-out {
+    
+    from {
+
+        transform: rotate(5deg);
+        margin-top: -70px;
+        
+    }
+
+    to {
+        transform: rotate(0deg);
+        padding-bottom: 0;
     }
     
 }

@@ -6,6 +6,7 @@
 #top-container {
     position: relative;
     height: 100vh;
+    width: 100%;
 }
 
 #background-img {
@@ -19,9 +20,12 @@
 
 }
 
+
+//header bar. Logo, nav menu, contact button 
+
 #header {
     height: 100px;
-    width: 80%;
+    width: 90%;
     font-family: $open-sans;
     font-weight: 500;
     display: flex;
@@ -33,23 +37,31 @@
 #logo-img {
     height: 90px;
     width: 61px;
-    margin-right: 139px;
+    
   
     
 }
+
 
 #nav li{
     display: inline;
     text-align: center;
     padding: 0 25px 0 25px;
+    animation: nav-menu-out 0.1s linear 1 normal;
+    
+
+   
 }
 
-#nav {
-   
-    
-    
-    
+#nav li:hover {
+     //nav-menu animation 
+     animation: nav-menu-in 0.1s linear 1 normal;
+     color: $red;
+     font-size: 1.1rem;
+     
+     
 }
+
 
 #contact-btn {
     width: 200px;
@@ -67,3 +79,86 @@
     animation: contact-button-hover-in 0.2s 1 none;
     background-color: $blue;
 }
+
+// h1 
+
+h1 {
+    font-family: $bebas-Neue;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 45px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+
+
+
+//middle container, design steps, paragraph
+
+
+#container-two {
+    height: 2000px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+#container-two h2, #container-two h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#container-two h3 {
+    font-weight: 400;
+}
+
+#section-paragraph {
+    margin-bottom: 200px;
+    
+}
+
+// steps cards
+
+    #section-steps, #steps-icons {
+        height: 700px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #steps-icons {
+        margin-top: -30%;
+        
+    }
+
+    #steps-icons img {
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+    .step-card {
+        height: 600px;
+        width: 20%;
+        background-color: $blue;
+        border-radius: 25px;
+        text-align: center;
+        color: $white;
+        animation: step-card-out 1s 1 forwards;
+
+    }
+
+    .step-card:hover {
+        animation: step-card-in 0.2s 1 forwards;
+        height: 650px;
+        width: 21%;
+    }
+
+    .step-card h3 {
+        margin-top: 20px;
+    }
+
+    .step-card p {
+        padding: 20px;
+    }
