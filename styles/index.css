@@ -188,44 +188,44 @@
 
 @-webkit-keyframes step-card-in {
   from {
-    height: 600px;
+    height: 80%;
     width: 20%;
   }
   to {
-    height: 650px;
+    height: 90%px;
     width: 21%;
   }
 }
 
 @keyframes step-card-in {
   from {
-    height: 600px;
+    height: 80%;
     width: 20%;
   }
   to {
-    height: 650px;
+    height: 90%px;
     width: 21%;
   }
 }
 
 @-webkit-keyframes step-card-out {
   from {
-    height: 650px;
+    height: 90%;
     width: 21%;
   }
   to {
-    height: 600px;
+    height: 80%;
     width: 20%;
   }
 }
 
 @keyframes step-card-out {
   from {
-    height: 650px;
+    height: 90%;
     width: 21%;
   }
   to {
-    height: 600px;
+    height: 80%;
     width: 20%;
   }
 }
@@ -302,8 +302,8 @@ a {
 }
 
 #background-img {
-  width: 1500px;
-  height: 992px;
+  width: 75%;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -377,6 +377,7 @@ h1 {
 }
 
 #container-two {
+  position: relative;
   height: 2000px;
   max-width: 1400px;
   margin: 0 auto;
@@ -387,8 +388,26 @@ h1 {
   text-align: center;
 }
 
-#container-two h3 {
-  font-weight: 400;
+#container-two #about {
+  font-size: 2rem;
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+#container-two .web-design-process {
+  position: absolute;
+  font-weight: 600;
+  font-family: "Bebas Neue", cursive;
+  font-size: 12rem;
+  width: 100%;
+  left: 50%;
+  top: 23%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.5;
 }
 
 #section-paragraph {
@@ -417,7 +436,7 @@ h1 {
 }
 
 .step-card {
-  height: 600px;
+  height: 80%;
   width: 20%;
   background-color: #223FE3;
   border-radius: 25px;
@@ -436,6 +455,8 @@ h1 {
 
 .step-card h3 {
   margin-top: 20px;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 .step-card p {

@@ -135,25 +135,25 @@
 
 @keyframes step-card-in {
     from { 
-        height: 600px;
+        height: 80%;
         width: 20%;
     }
 
     to {
-        height: 650px;
+        height: 90%px;
         width: 21%;
     }
 }
 
 @keyframes step-card-out {
     from { 
-        height: 650px;
+        height: 90%;
         width: 21%;
        
     }
 
     to {
-        height: 600px;
+        height: 80%;
         width: 20%;
     }
 }
