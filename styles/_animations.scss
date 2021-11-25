@@ -140,7 +140,7 @@
     }
 
     to {
-        height: 90%px;
+        height: 90%;
         width: 21%;
     }
 }
@@ -191,4 +191,32 @@
         padding-bottom: 0;
     }
     
+}
+
+//service card animation
+
+
+@keyframes service-card-in {
+    from { 
+        height: 27%;
+        width: 45%;
+    }
+
+    to {
+        height: 28%;
+        width: 47%;
+    }
+}
+
+@keyframes service-card-out {
+    from { 
+        height: 28%;
+        width: 47%;;
+       
+    }
+
+    to {
+        height: 27%;
+        width: 45%;
+    }
 }
