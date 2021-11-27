@@ -198,25 +198,25 @@
 
 @keyframes service-card-in {
     from { 
-        height: 27%;
+        height: 90%;
         width: 45%;
     }
 
     to {
-        height: 28%;
+        height: 94%;
         width: 47%;
     }
 }
 
 @keyframes service-card-out {
     from { 
-        height: 28%;
+        height: 94%;
         width: 47%;;
        
     }
 
     to {
-        height: 27%;
+        height: 90%;
         width: 45%;
     }
 }
