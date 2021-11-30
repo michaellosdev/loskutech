@@ -25,6 +25,10 @@
 
 //header bar. Logo, nav menu, contact button 
 
+#mobile-menu, #header-mobile {
+    display: none;
+} 
+
 #header {
     height: 100px;
     width: 90%;

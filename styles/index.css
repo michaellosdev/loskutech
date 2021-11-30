@@ -566,6 +566,10 @@ input[type='submit']:hover {
   z-index: -1;
 }
 
+#mobile-menu, #header-mobile {
+  display: none;
+}
+
 #header {
   height: 100px;
   width: 90%;
