@@ -1,0 +1,66 @@
+
+
+// Extra small devices (phones, 600px and down)
+
+@media only screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mobile-menu {
+        display: none;
+        position: absolute;
+        top:25%;
+        right: 0;
+        background-color: green;
+    }
+    
+    #header {
+        display: none !important;
+    }
+
+    #header-mobile {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #logo-container {
+        width: 50%;
+        display: flex;
+        
+        justify-content: left;
+
+    }
+
+    #logo-img-mobile {
+        height: 90px;
+        width: 61px;
+        margin-left: 50px;
+    }
+
+    #mobile-menu-btn {
+        width: 50%;
+        margin-right: 50px;
+        padding-top: 10px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .mobile-menu-btn-line {
+        margin-bottom: 5px;
+        height: 5px;
+        width: 30px;
+        background-color: black;
+
+    }
+
+
+}

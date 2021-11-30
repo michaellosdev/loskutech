@@ -13,6 +13,12 @@ a {
     text-decoration: none;
 }
 
+a:hover, a:visited, a:focus {
+    text-decoration: none;
+    color: black;
+
+}
+
 #container-two, 
 #services-container,
 #work-container {

@@ -1,14 +1,28 @@
-// variables 
-
-//const containerTwo = document.getElementById("container-two");
-//const webDesignProcess = document.getElementsByClassName("web-design-process")[0];
+// contact modal 
 
 
-//containerTwo.addEventListener('scroll', function() {
-    //webDesignProcess.style.opacity = '1'
-//})
+const overlay = document.getElementById('overlay');
+const contactBtn = document.getElementById('contact-btn');
+const closeModal = document.getElementById('close-btn');
+const submitBtn = document.getElementById('submit-btn');
+
+contactBtn.addEventListener('click', function() {
+    overlay.style.display = 'block';
+})
+
+closeModal.addEventListener('click', function() {
+    overlay.style.display = 'none';
+})
+
+
+//mobile menu 
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
 
 
 
-
+mobileMenuBtn.addEventListener('click', ()=> {
+    mobileMenu.style.display = "block"
+})
 
