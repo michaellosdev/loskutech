@@ -220,3 +220,94 @@
         width: 45%;
     }
 }
+
+//mobile menu animations 
+
+//mobile menu open and close button animation
+
+@keyframes first-line {
+    from {
+        transform: rotate(0deg) translate(0,0);
+
+    } to {
+        transform: rotate(-45deg) translate(-5px,2px);
+        
+    }
+}
+
+@keyframes second-line {
+    from {
+        transform: rotate(0deg);
+        
+       
+    } to {
+        transform: rotate(45deg);
+        
+       
+    }
+}
+
+@keyframes third-line {
+    from {
+        transform: rotate(0deg) translate(0, 0);
+        width: 25px;
+        
+        
+        
+    } to {
+        transform: rotate(-45deg) translate(-6px, -12px);
+        width: 15px;
+        
+      
+    }
+}
+
+
+@keyframes first-line-out {
+    from {
+        transform: rotate(-45deg) translate(-5px,2px);
+    } to {
+        transform: rotate(0deg) translate(0,0);
+    }
+}
+
+@keyframes second-line-out {
+    from {
+        transform: rotate(45deg);
+       
+    } to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes third-line-out {
+    from {
+        transform: rotate(-45deg) translate(-6px, -12px);
+        width: 15px;
+        
+    } to {
+        transform: rotate(0deg) translate(0, 0);
+        width: 25px;
+    }
+}
+//mobile menu open/close animation 
+
+@keyframes mobile-menu-open {
+    from {
+        height: 0;
+        
+    } to {
+        height: 400px;
+        
+    }
+}
+
+@keyframes mobile-menu-close {
+    from {
+        
+        height: 400px;
+    } to {
+        height: 0;
+        
+    }
+}
