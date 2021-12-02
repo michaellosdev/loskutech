@@ -95,12 +95,8 @@
             margin-right: 20px;
             margin-top: 10px;
             height: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            -webkit-align-items: flex-end;
-                 
+            
+
         }
     
         .mobile-menu-btn-line {
@@ -113,9 +109,11 @@
     
         #first-line {
             width: 15px; 
+            margin-left: 15px;
     
         } #third-line {
             width: 25px;
+            margin-left: 5px;
         }
     
     

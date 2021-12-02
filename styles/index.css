@@ -377,8 +377,8 @@
     width: 25px;
   }
   to {
-    -webkit-transform: rotate(-45deg) translate(-6px, -12px);
-            transform: rotate(-45deg) translate(-6px, -12px);
+    -webkit-transform: rotate(-45deg) translate(0, -6px);
+            transform: rotate(-45deg) translate(0, -6px);
     width: 15px;
   }
 }
@@ -390,8 +390,8 @@
     width: 25px;
   }
   to {
-    -webkit-transform: rotate(-45deg) translate(-6px, -12px);
-            transform: rotate(-45deg) translate(-6px, -12px);
+    -webkit-transform: rotate(-45deg) translate(0, -6px);
+            transform: rotate(-45deg) translate(0, -6px);
     width: 15px;
   }
 }
@@ -442,8 +442,8 @@
 
 @-webkit-keyframes third-line-out {
   from {
-    -webkit-transform: rotate(-45deg) translate(-6px, -12px);
-            transform: rotate(-45deg) translate(-6px, -12px);
+    -webkit-transform: rotate(-45deg) translate(0px, -6px);
+            transform: rotate(-45deg) translate(0px, -6px);
     width: 15px;
   }
   to {
@@ -455,8 +455,8 @@
 
 @keyframes third-line-out {
   from {
-    -webkit-transform: rotate(-45deg) translate(-6px, -12px);
-            transform: rotate(-45deg) translate(-6px, -12px);
+    -webkit-transform: rotate(-45deg) translate(0px, -6px);
+            transform: rotate(-45deg) translate(0px, -6px);
     width: 15px;
   }
   to {
@@ -738,20 +738,6 @@ input[type='submit']:hover {
     margin-right: 20px;
     margin-top: 10px;
     height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-align-items: flex-end;
   }
   .mobile-menu-btn-line {
     margin-bottom: 5px;
@@ -761,9 +747,11 @@ input[type='submit']:hover {
   }
   #first-line {
     width: 15px;
+    margin-left: 15px;
   }
   #third-line {
     width: 25px;
+    margin-left: 5px;
   }
   #container-two {
     position: relative;
