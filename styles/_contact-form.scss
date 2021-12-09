@@ -30,13 +30,18 @@ input:focus, textarea:focus, select:focus {
     position: relative;
     font-family: $open-sans;
     margin: 0 auto;
-    height: 700px;
+    height: 95%;
     width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $blue;
     border-radius: 25px;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
     
     
 

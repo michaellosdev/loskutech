@@ -3,16 +3,24 @@
 
 const overlay = document.getElementById('overlay');
 const contactBtn = document.getElementById('contact-btn');
+const contactBtnMobile = document.getElementById('contact-btn-mobile');
 const closeModal = document.getElementById('close-btn');
 const submitBtn = document.getElementById('submit-btn');
 
 contactBtn.addEventListener('click', function() {
     overlay.style.display = 'block';
+    body.style.overflow ='hidden';
+    body.style.height = '100%'
 })
 
 closeModal.addEventListener('click', function() {
     overlay.style.display = 'none';
+    body.style.overflow ='';
+    body.style.height = ''
 })
+
+
+
 
 
 //mobile menu 

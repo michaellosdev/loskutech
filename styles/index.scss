@@ -5,6 +5,10 @@
 @import '_mobile-styles';
 
 
+
+
+
+
 #top-container {
     position: relative;
     height: 100vh;
@@ -22,6 +26,28 @@
 
 }
 
+
+@media only screen and (min-width: 1024px){
+    
+
+
+    #top-container {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #background-img {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    
+    }
+    
 
 //header bar. Logo, nav menu, contact button 
 
@@ -105,7 +131,7 @@ h1 {
 
 #container-two {
     position: relative;
-    height: 1400px;
+    margin-bottom: 300px;
     
 }
 
@@ -130,7 +156,7 @@ h1 {
     font-size: 12rem;
     width: 100%;
     left: 50%;
-    top: 35%;
+    top: 500px;
     transform: translateX(-50%);
     z-index: -1;
     opacity: 0.5;
@@ -145,39 +171,41 @@ h1 {
 
 // steps cards
 
-    #section-steps, #steps-icons {
+    #section-steps {
         height: 700px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
         
     }
 
-    #steps-icons {
-        margin-top: -30%;
-        
-    }
+   
 
-    #steps-icons img {
-        width: 200px;
-        height: 200px;
-        
+    .steps-icons {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
     }
     
     .step-card {
         height: 80%;
         width: 20%;
+        margin-top: 50px;
         background-color: $blue;
         border-radius: 25px;
         text-align: center;
         color: $white;
         animation: step-card-out 1s 1 forwards;
+        padding: 20px;
 
     }
 
     .step-card:hover {
         animation: step-card-in 0.2s 1 forwards;
-        height: 90%;
+        height: 82%;
         width: 21%;
     }
 
@@ -188,7 +216,8 @@ h1 {
     }
 
     .step-card p {
-        padding: 20px;
+        padding-top: 20px;
+        font-size: 1rem;
     }
 
 
@@ -207,7 +236,7 @@ h1 {
         font-family: $bebas-Neue;
         font-size: 12rem;
         width: 100%;
-        top: -10%;
+        top: -110px;
         text-align: center;
         z-index: -1;
         opacity: 0.5;
@@ -239,10 +268,18 @@ h1 {
         background-color: $red;
         margin:0 auto;
         border-radius:25px ;
+        margin-top: 50px;
+        text-align: center;
+        padding-top: 10px;
+        color: $white;
+
 
         animation: service-card-out 0.2s 1 forwards;
+    }
 
-
+    .service-card h3 {
+        font-weight: 500;
+        font-size: 2rem;
     }
 
     .service-card:hover {
@@ -261,9 +298,4 @@ h1 {
     }
 
     
-
-
-
-    
-    
-    
+}

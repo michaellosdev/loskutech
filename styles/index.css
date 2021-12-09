@@ -192,7 +192,7 @@
     width: 20%;
   }
   to {
-    height: 90%;
+    height: 82%;
     width: 21%;
   }
 }
@@ -203,14 +203,14 @@
     width: 20%;
   }
   to {
-    height: 90%;
+    height: 82%;
     width: 21%;
   }
 }
 
 @-webkit-keyframes step-card-out {
   from {
-    height: 90%;
+    height: 82%;
     width: 21%;
   }
   to {
@@ -221,7 +221,7 @@
 
 @keyframes step-card-out {
   from {
-    height: 90%;
+    height: 82%;
     width: 21%;
   }
   to {
@@ -377,8 +377,8 @@
     width: 25px;
   }
   to {
-    -webkit-transform: rotate(-45deg) translate(0, -6px);
-            transform: rotate(-45deg) translate(0, -6px);
+    -webkit-transform: rotate(-45deg) translate(0, -5px);
+            transform: rotate(-45deg) translate(0, -5px);
     width: 15px;
   }
 }
@@ -390,8 +390,8 @@
     width: 25px;
   }
   to {
-    -webkit-transform: rotate(-45deg) translate(0, -6px);
-            transform: rotate(-45deg) translate(0, -6px);
+    -webkit-transform: rotate(-45deg) translate(0, -5px);
+            transform: rotate(-45deg) translate(0, -5px);
     width: 15px;
   }
 }
@@ -442,8 +442,8 @@
 
 @-webkit-keyframes third-line-out {
   from {
-    -webkit-transform: rotate(-45deg) translate(0px, -6px);
-            transform: rotate(-45deg) translate(0px, -6px);
+    -webkit-transform: rotate(-45deg) translate(0px, -5px);
+            transform: rotate(-45deg) translate(0px, -5px);
     width: 15px;
   }
   to {
@@ -455,8 +455,8 @@
 
 @keyframes third-line-out {
   from {
-    -webkit-transform: rotate(-45deg) translate(0px, -6px);
-            transform: rotate(-45deg) translate(0px, -6px);
+    -webkit-transform: rotate(-45deg) translate(0px, -5px);
+            transform: rotate(-45deg) translate(0px, -5px);
     width: 15px;
   }
   to {
@@ -503,12 +503,13 @@
 }
 
 * {
-  margin: 0;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Bebas Neue', cursive;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  max-width: 2000px;
 }
 
 a {
@@ -553,7 +554,7 @@ input:focus, textarea:focus, select:focus {
   position: relative;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
-  height: 700px;
+  height: 95%;
   width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,6 +567,12 @@ input:focus, textarea:focus, select:focus {
           align-items: center;
   background-color: #223FE3;
   border-radius: 25px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 #close-btn {
@@ -657,18 +664,35 @@ input[type='submit']:hover {
   background-color: #223FE3;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 425px) {
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  body {
-    max-width: 600px;
+  #top-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  #background-img {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
   }
   h1 {
+    font-family: "Bebas Neue", cursive;
     text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 45px;
+    margin-left: 25px;
   }
   #mobile-menu {
     display: none;
@@ -755,83 +779,422 @@ input[type='submit']:hover {
   }
   #container-two {
     position: relative;
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
+    margin-bottom: 50px;
   }
-  #container-two h2, #container-two h3 {
-    font-size: 2rem !important;
+  #container-two h2 {
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 20px;
   }
   #container-two #about {
-    font-size: 1.2rem !important;
+    font-size: 1rem;
     padding-top: 20px;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     text-align: center;
   }
   #container-two .web-design-process {
     position: absolute;
+    text-align: center;
     font-weight: 600;
     font-family: "Bebas Neue", cursive;
-    font-size: 5rem !important;
-    width: 100%;
+    font-size: 5.3rem;
+    width: 90%;
     left: 50%;
-    top: 550px !important;
+    top: 470px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: -1;
     opacity: 0.5;
   }
-  #section-steps, #steps-icons {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    height: 2400px !important;
+  #section-paragraph {
+    margin-bottom: 200px;
   }
-  #steps-icons {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .step-card {
-    height: 550px !important;
-    width: 90% !important;
-    height: 100%;
-  }
-  #services-container {
-    height: 2100px;
-  }
-  #services-container h2 {
-    font-size: 5rem !important;
-    top: -5% !important;
-  }
-  #service-cards-one,
-  #service-cards-two,
-  #service-cards-three {
+  #section-steps {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .step-card {
+    width: 90%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #223FE3;
+    border-radius: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+  }
+  .steps-icons {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .step-card h3 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .step-card p {
+    margin-bottom: 20px;
+  }
+  #services-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    width: 100%;
+  }
+  #services-container h2 {
+    position: absolute;
+    font-weight: 600;
+    font-family: "Bebas Neue", cursive;
+    font-size: 7rem;
+    width: 100%;
+    top: 110px;
+    text-align: center;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #services-cards {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 150px;
+  }
+  #service-cards-one,
+  #service-cards-two,
+  #service-cards-three {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .service-card {
-    width: 90% !important;
-    height: 350px !important;
-    margin-top: 10px !important;
+    width: 90%;
+    height: 300px;
     background-color: #E53C5D;
     margin: 0 auto;
     border-radius: 25px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;
+    color: #FFFFFF;
+  }
+  .service-card h3 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  #footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #223FE3;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #top-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  #background-img {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 45px;
+    margin-left: 25px;
+  }
+  #mobile-menu {
+    display: none;
+    position: absolute;
+    top: 135px;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #E53C5D;
+    overflow: hidden;
+    -webkit-animation: mobile-menu-open 0.2s linear 1 normal;
+            animation: mobile-menu-open 0.2s linear 1 normal;
+  }
+  #mobile-menu ul {
+    text-align: center;
+  }
+  #mobile-menu ul li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+  }
+  #contact-btn-mobile {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 37.5px;
+    border-radius: 25px;
+    border: none;
+    background-color: #223FE3;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  #header {
+    display: none !important;
+  }
+  #header-mobile {
+    display: block !important;
+    width: 100%;
+    height: 150px;
+    padding-top: 25px;
+  }
+  #flexbox-header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #logo-img-mobile {
+    height: 90px;
+    width: 61px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  #mobile-menu-btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 50px;
+  }
+  .mobile-menu-btn-line {
+    margin-bottom: 5px;
+    height: 5px;
+    width: 30px;
+    background-color: black;
+  }
+  #first-line {
+    width: 15px;
+    margin-left: 15px;
+  }
+  #third-line {
+    width: 25px;
+    margin-left: 5px;
+  }
+  #container-two {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  #container-two h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #container-two #about {
+    font-size: 1rem;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  #container-two .web-design-process {
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Bebas Neue", cursive;
+    font-size: 6rem;
+    width: 100%;
+    left: 50%;
+    top: 380px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #section-paragraph {
+    margin-bottom: 200px;
+  }
+  #section-steps {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .step-card {
+    width: 90%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #223FE3;
+    border-radius: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+  }
+  .steps-icons {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .step-card h3 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .step-card p {
+    margin-bottom: 20px;
+  }
+  #services-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    width: 100%;
+  }
+  #services-container h2 {
+    position: absolute;
+    font-weight: 600;
+    font-family: "Bebas Neue", cursive;
+    font-size: 7rem;
+    width: 100%;
+    top: 110px;
+    text-align: center;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #services-cards {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 150px;
+  }
+  #service-cards-one,
+  #service-cards-two,
+  #service-cards-three {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-card {
+    width: 90%;
+    height: 300px;
+    background-color: #E53C5D;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;
+    color: #FFFFFF;
+  }
+  .service-card h3 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  #footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #223FE3;
   }
 }
 
@@ -852,226 +1215,229 @@ input[type='submit']:hover {
   z-index: -1;
 }
 
-#mobile-menu, #header-mobile {
-  display: none;
-}
-
-#header {
-  height: 100px;
-  width: 90%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-}
-
-#logo-img {
-  height: 90px;
-  width: 61px;
-}
-
-#nav li {
-  display: inline;
-  text-align: center;
-  padding: 0 25px 0 25px;
-  -webkit-animation: nav-menu-out 0.1s linear 1 normal;
-          animation: nav-menu-out 0.1s linear 1 normal;
-}
-
-#nav li:hover {
-  -webkit-animation: nav-menu-in 0.1s linear 1 normal;
-          animation: nav-menu-in 0.1s linear 1 normal;
-  color: #E53C5D;
-  font-size: 1.1rem;
-}
-
-#contact-btn {
-  width: 200px;
-  height: 50px;
-  border-radius: 25px;
-  border: none;
-  background-color: #E53C5D;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  -webkit-animation: contact-button-hover-out 0.2s 1 none;
-          animation: contact-button-hover-out 0.2s 1 none;
-}
-
-#contact-btn:hover {
-  -webkit-animation: contact-button-hover-in 0.2s 1 none;
-          animation: contact-button-hover-in 0.2s 1 none;
-  background-color: #223FE3;
-}
-
-h1 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 45px;
-  margin-top: 50px;
-  margin-left: 25px;
-}
-
-#container-two {
-  position: relative;
-  height: 1400px;
-}
-
-#container-two h2, #container-two h3 {
-  font-size: 2rem;
-  text-align: center;
-}
-
-#container-two #about {
-  font-size: 2rem;
-  padding-top: 20px;
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
-}
-
-#container-two .web-design-process {
-  position: absolute;
-  font-weight: 600;
-  font-family: "Bebas Neue", cursive;
-  font-size: 12rem;
-  width: 100%;
-  left: 50%;
-  top: 35%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: -1;
-  opacity: 0.5;
-}
-
-#section-paragraph {
-  margin-bottom: 200px;
-}
-
-#section-steps, #steps-icons {
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#steps-icons {
-  margin-top: -30%;
-}
-
-#steps-icons img {
-  width: 200px;
-  height: 200px;
-}
-
-.step-card {
-  height: 80%;
-  width: 20%;
-  background-color: #223FE3;
-  border-radius: 25px;
-  text-align: center;
-  color: #FFFFFF;
-  -webkit-animation: step-card-out 1s 1 forwards;
-          animation: step-card-out 1s 1 forwards;
-}
-
-.step-card:hover {
-  -webkit-animation: step-card-in 0.2s 1 forwards;
-          animation: step-card-in 0.2s 1 forwards;
-  height: 90%;
-  width: 21%;
-}
-
-.step-card h3 {
-  margin-top: 20px;
-  font-weight: 300;
-  font-size: 2rem;
-}
-
-.step-card p {
-  padding: 20px;
-}
-
-#services-container {
-  position: relative;
-  width: 100%;
-  margin-top: 100px;
-}
-
-#services-container h2 {
-  position: absolute;
-  font-weight: 600;
-  font-family: "Bebas Neue", cursive;
-  font-size: 12rem;
-  width: 100%;
-  top: -10%;
-  text-align: center;
-  z-index: -1;
-  opacity: 0.5;
-}
-
-#services-cards {
-  height: 1400px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#service-cards-one,
-#service-cards-two,
-#service-cards-three {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.service-card {
-  width: 45%;
-  height: 90%;
-  background-color: #E53C5D;
-  margin: 0 auto;
-  border-radius: 25px;
-  -webkit-animation: service-card-out 0.2s 1 forwards;
-          animation: service-card-out 0.2s 1 forwards;
-}
-
-.service-card:hover {
-  -webkit-animation: service-card-in 0.2s 1 forwards;
-          animation: service-card-in 0.2s 1 forwards;
-  height: 94%;
-  width: 47%;
-}
-
-#footer {
-  margin-top: 100px;
-  width: 100%;
-  height: 400px;
-  background-color: #223FE3;
+@media only screen and (min-width: 1024px) {
+  #top-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  #background-img {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  #mobile-menu, #header-mobile {
+    display: none;
+  }
+  #header {
+    height: 100px;
+    width: 90%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  #logo-img {
+    height: 90px;
+    width: 61px;
+  }
+  #nav li {
+    display: inline;
+    text-align: center;
+    padding: 0 25px 0 25px;
+    -webkit-animation: nav-menu-out 0.1s linear 1 normal;
+            animation: nav-menu-out 0.1s linear 1 normal;
+  }
+  #nav li:hover {
+    -webkit-animation: nav-menu-in 0.1s linear 1 normal;
+            animation: nav-menu-in 0.1s linear 1 normal;
+    color: #E53C5D;
+    font-size: 1.1rem;
+  }
+  #contact-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #E53C5D;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    -webkit-animation: contact-button-hover-out 0.2s 1 none;
+            animation: contact-button-hover-out 0.2s 1 none;
+  }
+  #contact-btn:hover {
+    -webkit-animation: contact-button-hover-in 0.2s 1 none;
+            animation: contact-button-hover-in 0.2s 1 none;
+    background-color: #223FE3;
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 45px;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  #container-two {
+    position: relative;
+    margin-bottom: 300px;
+  }
+  #container-two h2, #container-two h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #container-two #about {
+    font-size: 2rem;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+  #container-two .web-design-process {
+    position: absolute;
+    font-weight: 600;
+    font-family: "Bebas Neue", cursive;
+    font-size: 12rem;
+    width: 100%;
+    left: 50%;
+    top: 500px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #section-paragraph {
+    margin-bottom: 200px;
+  }
+  #section-steps {
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps-icons {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .step-card {
+    height: 80%;
+    width: 20%;
+    margin-top: 50px;
+    background-color: #223FE3;
+    border-radius: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-animation: step-card-out 1s 1 forwards;
+            animation: step-card-out 1s 1 forwards;
+    padding: 20px;
+  }
+  .step-card:hover {
+    -webkit-animation: step-card-in 0.2s 1 forwards;
+            animation: step-card-in 0.2s 1 forwards;
+    height: 82%;
+    width: 21%;
+  }
+  .step-card h3 {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .step-card p {
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+  #services-container {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+  #services-container h2 {
+    position: absolute;
+    font-weight: 600;
+    font-family: "Bebas Neue", cursive;
+    font-size: 12rem;
+    width: 100%;
+    top: -110px;
+    text-align: center;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #services-cards {
+    height: 1400px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #service-cards-one,
+  #service-cards-two,
+  #service-cards-three {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-card {
+    width: 45%;
+    height: 90%;
+    background-color: #E53C5D;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;
+    color: #FFFFFF;
+    -webkit-animation: service-card-out 0.2s 1 forwards;
+            animation: service-card-out 0.2s 1 forwards;
+  }
+  .service-card h3 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .service-card:hover {
+    -webkit-animation: service-card-in 0.2s 1 forwards;
+            animation: service-card-in 0.2s 1 forwards;
+    height: 94%;
+    width: 47%;
+  }
+  #footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #223FE3;
+  }
 }
 /*# sourceMappingURL=index.css.map */

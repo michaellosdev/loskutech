@@ -1,7 +1,7 @@
 
-// Extra small devices (phones, 640px and down)
+//  (phones, 640px and down)
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 425px) {
 
     // top container, header, hamburger menu.
         * {
@@ -9,16 +9,33 @@
             margin: 0;
             padding: 0;
         }
-    
-        body {
-            max-width: 600px;
-    
+
+        #top-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        #background-img {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        
         }
     
         h1 {
+            font-family: $bebas-Neue;
             text-align: center;
+            font-weight: 500;
+            font-size: 3rem;
+            line-height: 45px;
+            margin-left: 25px;
         }
-    
+
         #mobile-menu {
             display: none;
             position: absolute;
@@ -116,96 +133,440 @@
             margin-left: 5px;
         }
     
-    
-    
-    // container two 
-    
-    
+
+
+        // container two
+
         #container-two {
             position: relative;
-            height: fit-content !important;
-    
+            margin-bottom: 50px;
         }
-    
-        #container-two h2, #container-two h3 {
-            font-size: 2rem !important;
+        
+        
+        #container-two h2 {
+            font-size: 2rem;
             text-align: center;
+            margin-bottom: 20px;
         }
-    
+        
         #container-two #about {
-            font-size: 1.2rem !important;
+            font-size: 1rem;
             padding-top: 20px;
             margin: 0 auto;
-            width: 80%;
+            width: 90%;
             text-align: center;
         }
-    
+        
         #container-two .web-design-process {
             position: absolute;
+            text-align: center;
             font-weight: 600;
             font-family: $bebas-Neue;
-            font-size: 5rem !important;
-            width: 100%;
+            font-size: 5.3rem;
+            width: 90%;
             left: 50%;
-            top: 550px !important;
+            top: 470px;
             transform: translateX(-50%);
             z-index: -1;
             opacity: 0.5;
+        
+        
         }
-    
-    
-    
-    
-        #section-steps, #steps-icons {
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: center;
-            align-content: center;
-            height: 2400px !important;
-    
+        
+        #section-paragraph {
+            margin-bottom: 200px;
+            
         }
-    
-        #steps-icons {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translateX(-50%);
-    
+  
+        //step cards 
+        #section-steps {    
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            
         }
-    
+
         .step-card {
-            height: 550px !important;
-            width: 90% !important;
-            height: 100%;
+            width: 90%;
+            height: 300px;
+            margin-top: 50px;
+            background-color: $blue;
+            border-radius: 25px;
+            text-align: center;
+            color: $white;
+            padding-top: 10px;
         }
-    
-    
-    
-        // services 
-    
+
+
+        .steps-icons {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        .step-card h3 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        .step-card p {
+           margin-bottom: 20px;
+        }
+
+
+        //services 
+
         #services-container {
-            height: 2100px;
+            height: fit-content;
+            position: relative;
+            width: 100%;
         }
     
         #services-container h2 {
-            font-size: 5rem !important;
-            top: -5% !important;
+            position: absolute;
+            font-weight: 600;
+            font-family: $bebas-Neue;
+            font-size: 7rem;
+            width: 100%;
+            top: 110px;
+            text-align: center;
+            z-index: -1;
+            opacity: 0.5;
+    
         }
+
+        #services-cards {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 150px;
+        }
+
+    
     
         #service-cards-one,
         #service-cards-two,
         #service-cards-three {
-            flex-direction: column;    
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            align-items: center;
         }
-    
+
         .service-card {
-            width: 90% !important;
-            height: 350px !important;
-            margin-top: 10px !important;
+            width: 90%;
+            height: 300px;
             background-color: $red;
             margin:0 auto;
             border-radius:25px ;
-    
-    
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 10px;
+            color: $white;
+        }
+
+        .service-card h3 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        #footer {
+            margin-top: 100px;
+            width: 100%;
+            height: 400px;
+            background-color: $blue;
         }
     }
+
+    // (tablets from 641px to 1024)
+
+    @media only screen and (min-width: 426px) and (max-width: 1023px ) {
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #top-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        #background-img {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        
+        }
+    
+        h1 {
+            font-family: $bebas-Neue;
+            text-align: center;
+            font-weight: 500;
+            font-size: 3rem;
+            line-height: 45px;
+            margin-left: 25px;
+        }
+
+        #mobile-menu {
+            display: none;
+            position: absolute;
+            top:135px;
+            right: 0;
+            height: 400px;
+            width: 100%;
+            background-color:$red;
+            overflow: hidden;
+            animation: mobile-menu-open 0.2s linear 1 normal;
+        }
+    
+        #mobile-menu ul {
+            text-align: center;
+    
+        }
+    
+        #mobile-menu ul li {
+            list-style: none;
+            padding-top:10px ;
+            padding-bottom: 10px;
+            border-bottom: 0.5px solid $white ;
+            color: $white;
+            font-family: $open-sans;
+            font-weight: 200;
+    
+        }
+    
+        #contact-btn-mobile {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 150px;
+            height: 37.5px;
+            border-radius: 25px;
+            border:none;
+            background-color: $blue;
+            color: $white;
+            text-transform: uppercase;
+        }
+    
+        #header {
+            display: none !important;
+        }
+    
+        #header-mobile {
+            display: block !important;
+            width: 100%;
+            height: 150px;
+            padding-top: 25px;
+    
+        }
+    
+        #flexbox-header-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+    
+    
+    
+    
+        #logo-img-mobile {
+            height: 90px;
+            width: 61px;
+            margin-top:10px;
+            margin-left: 20px ;
+        }
+    
+        #mobile-menu-btn {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            margin-top: 10px;
+            height: 50px;
+            
+
+        }
+    
+        .mobile-menu-btn-line {
+            margin-bottom: 5px;
+            height: 5px;
+            width: 30px;
+            background-color: black;
+    
+        }
+    
+        #first-line {
+            width: 15px; 
+            margin-left: 15px;
+    
+        } #third-line {
+            width: 25px;
+            margin-left: 5px;
+        }
+    
+
+
+        // container two
+
+        #container-two {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        
+        #container-two h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #container-two #about {
+            font-size: 1rem;
+            padding-top: 20px;
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+        }
+        
+        #container-two .web-design-process {
+            position: absolute;
+            text-align: center;
+            font-weight: 600;
+            font-family: $bebas-Neue;
+            font-size: 6rem;
+            width: 100%;
+            left: 50%;
+            top: 380px;
+            transform: translateX(-50%);
+            z-index: -1;
+            opacity: 0.5;
+        
+        
+        }
+        
+        #section-paragraph {
+            margin-bottom: 200px;
+            
+        }
+  
+        //step cards 
+        #section-steps {    
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .step-card {
+            width: 90%;
+            height: 300px;
+            margin-top: 50px;
+            background-color: $blue;
+            border-radius: 25px;
+            text-align: center;
+            color: $white;
+            padding-top: 10px;
+        }
+
+
+        .steps-icons {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        .step-card h3 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        .step-card p {
+           margin-bottom: 20px;
+        }
+
+
+        //services 
+
+        #services-container {
+            height: fit-content;
+            position: relative;
+            width: 100%;
+        }
+    
+        #services-container h2 {
+            position: absolute;
+            font-weight: 600;
+            font-family: $bebas-Neue;
+            font-size: 7rem;
+            width: 100%;
+            top: 110px;
+            text-align: center;
+            z-index: -1;
+            opacity: 0.5;
+    
+        }
+
+        #services-cards {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 150px;
+        }
+
+    
+    
+        #service-cards-one,
+        #service-cards-two,
+        #service-cards-three {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-card {
+            width: 90%;
+            height: 300px;
+            background-color: $red;
+            margin:0 auto;
+            border-radius:25px ;
+            margin-top: 50px;
+            text-align: center;
+            padding-top: 10px;
+            color: $white;
+        }
+
+        .service-card h3 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        #footer {
+            margin-top: 100px;
+            width: 100%;
+            height: 400px;
+            background-color: $blue;
+        }
+    }
+    
