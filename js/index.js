@@ -59,6 +59,18 @@ mobileMenuBtn.addEventListener('click', ()=> {
 })
 
 
+mobileMenu.addEventListener('click', ()=> {
+
+    firstLine.style.animation = 'first-line-out 0.2s linear 1 forwards';
+    secondLine.style.animation = 'second-line-out 0.2s linear 1 forwards';
+    thirdLine.style.animation = 'third-line-out 0.2s linear 1 forwards';
+    mobileMenu.style.animation = 'mobile-menu-close 0.2s linear 1 forwards';
+    setTimeout(function() {mobileMenu.style.display = "none"},200);
+   
+
+})
+
+
 
 
 

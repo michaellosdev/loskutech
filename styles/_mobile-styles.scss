@@ -162,10 +162,10 @@
             text-align: center;
             font-weight: 600;
             font-family: $bebas-Neue;
-            font-size: 5.3rem;
+            font-size: 7rem;
             width: 90%;
             left: 50%;
-            top: 470px;
+            top: 310px;
             transform: translateX(-50%);
             z-index: -1;
             opacity: 0.5;
@@ -177,6 +177,49 @@
             margin-bottom: 200px;
             
         }
+
+        //work 
+
+        #work-container {
+            position: relative;
+            margin-top: 200px;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #work-container h2 {
+            position: absolute;
+            text-align: center;
+            font-weight: 600;
+            font-family: $bebas-Neue;
+            font-size: 7rem;
+            width: 90%;
+            left: 50%;
+            top: -90px;
+            transform: translateX(-50%);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .portfolio {
+            width: 90%;
+            margin-bottom: 50px;
+            
+        }
+
+        .portfolio img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+
+
+
   
         //step cards 
         #section-steps {    
@@ -462,6 +505,48 @@
             margin-bottom: 200px;
             
         }
+
+         //work 
+
+         #work-container {
+            position: relative;
+            margin-top: 200px;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #work-container h2 {
+            position: absolute;
+            text-align: center;
+            font-weight: 600;
+            font-family: $bebas-Neue;
+            font-size: 7rem;
+            width: 90%;
+            left: 50%;
+            top: -90px;
+            transform: translateX(-50%);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .portfolio {
+            width: 90%;
+            margin-bottom: 50px;
+            
+        }
+
+        .portfolio img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+
+
   
         //step cards 
         #section-steps {    
