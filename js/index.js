@@ -1,5 +1,7 @@
-// contact modal 
+// contact modal i wil  use later
 
+
+/* 
 
 const overlay = document.getElementById('overlay');
 const contactBtn = document.getElementById('contact-btn');
@@ -17,7 +19,9 @@ closeModal.addEventListener('click', function() {
     overlay.style.display = 'none';
     body.style.overflow ='';
     body.style.height = ''
-})
+}) 
+
+*/
 
 
 
@@ -30,6 +34,7 @@ closeModal.addEventListener('click', function() {
 const body = document.getElementsByTagName('body')[0]; 
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
+const getInTouchBtn = document.getElementById('link');
 
 //mobile menu open/close button
 

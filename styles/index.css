@@ -503,7 +503,8 @@
 }
 
 * {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Bebas Neue', cursive;
@@ -517,7 +518,7 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:visited, a:focus {
+a:hover, a:focus, a:visited {
   text-decoration: none;
   color: black;
 }
@@ -878,7 +879,7 @@ input[type='submit']:hover {
     border-radius: 25px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 10px;
+    padding: 10px 15px 0 15px;
   }
   .steps-icons {
     width: 120px;
@@ -1319,7 +1320,7 @@ input[type='submit']:hover {
   }
   #header {
     height: 100px;
-    width: 90%;
+    width: 100%;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     display: -webkit-box;
@@ -1333,13 +1334,19 @@ input[type='submit']:hover {
             align-items: center;
     margin: 0 auto;
   }
+  .logo-container {
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
   #logo-img {
     height: 90px;
     width: 61px;
   }
   #nav li {
     display: inline;
-    text-align: center;
+    list-style: none;
     padding: 0 25px 0 25px;
     -webkit-animation: nav-menu-out 0.1s linear 1 normal;
             animation: nav-menu-out 0.1s linear 1 normal;
@@ -1351,6 +1358,7 @@ input[type='submit']:hover {
     font-size: 1.1rem;
   }
   #contact-btn {
+    margin-right: 50px;
     width: 200px;
     height: 50px;
     border-radius: 25px;
@@ -1396,7 +1404,7 @@ input[type='submit']:hover {
     font-size: 12rem;
     width: 100%;
     left: 50%;
-    top: 500px;
+    top: 400px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: -1;
@@ -1448,7 +1456,7 @@ input[type='submit']:hover {
     border-radius: 25px;
   }
   #section-steps {
-    height: 700px;
+    height: 550px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
